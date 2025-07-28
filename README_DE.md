@@ -1,13 +1,13 @@
-# 🌐 Intelligenz am Netzwerkrand (Edge): IoT-Datenaggregations- & Verarbeitungs-Gateway
+# 🌐 Intelligenz am Netzwerkrand (Edge): IoT Datenaggregations & Verarbeitungs-Gateway
 
-> **Ein robustes Edge-Computing-Gateway, entwickelt auf einem Raspberry Pi mit Go**  
+> **Ein robustes Edge Computing-Gateway, entwickelt auf einem Raspberry Pi mit Go**  
 > Dieses Projekt implementiert eine intelligente, resiliente Datenvorverarbeitung am Netzwerkrand, um Bandbreite zu reduzieren, die Datenqualität zu verbessern und einen zuverlässigen Telemetriefluss von IoT-Sensoren zu Cloud-Analysen über Kafka zu ermöglichen.
 
 ---
 
 ## 🔍 Projektübersicht
 
-In modernen IoT-Systemen führt das direkte Senden von Rohdaten von Sensoren in die Cloud zu **hoher Bandbreitennutzung**, **Latenzengpässen** und **erhöhten Betriebskosten**. Dieses Projekt löst dieses Problem mit einem **intelligenten Edge-Gateway**, das auf einem **Raspberry Pi** läuft und in **Go (Golang)** geschrieben ist, um hohe Leistung, Parallelität und Effizienz zu gewährleisten.
+In modernen IoT Systemen führt das direkte Senden von Rohdaten von Sensoren in die Cloud zu **hoher Bandbreitennutzung**, **Latenzengpässen** und **erhöhten Betriebskosten**. Dieses Projekt löst dieses Problem mit einem **intelligenten Edge-Gateway**, das auf einem **Raspberry Pi** läuft und in **Go (Golang)** geschrieben ist, um hohe Leistung, Parallelität und Effizienz zu gewährleisten.
 
 Das Gateway:
 - 📥 **Erfasst** Echtzeit-Sensordaten über **MQTT**
@@ -19,9 +19,9 @@ Indem die „Intelligenz“ an den Rand des Netzwerks verlagert wird, ermöglich
 - ✅ Bis zu **98 % Reduzierung des Datenvolumens**
 - ✅ **Kein Datenverlust** bei unterbrochener Konnektivität
 - ✅ **Lokale Verarbeitung mit geringer Latenz**
-- ✅ **Skalierbare Integration** mit Echtzeit-Analysen, Data Lakes oder ML-Pipelines
+- ✅ **Skalierbare Integration** mit Echtzeit Analysen, Data Lakes oder ML Pipelines
 
-Perfekt für **industrielle Überwachung**, **Smart-Environment-Systeme** oder **Fernerkundungsinfrastrukturen**.
+Perfekt für **industrielle Überwachung**, **Smart Environment Systeme** oder **Fernerkundungsinfrastrukturen**.
 
 ---
 
@@ -78,19 +78,19 @@ Eine Edge-First-Verarbeitung ist **entscheidend für Skalierbarkeit, Kosteneffiz
 
 ---
 
-## 🛠️ Tech-Stack
+## 🛠️ Tech Stack
 
 | Ebene            | Technologie                                  |
 |------------------|----------------------------------------------|
-| **Hardware**     | Raspberry Pi 4/5 (ARM64) oder jedes Linux-Gerät |
+| **Hardware**     | Raspberry Pi 4/5 (ARM64) oder jedes Linux Gerät |
 | **Sprache**      | Go (Golang) 1.21+                             |
-| **MQTT-Client**  | Eclipse Paho Go MQTT                          |
-| **Kafka-Client** | Confluent Kafka Go (`confluent-kafka-go`)     |
+| **MQTT Client**  | Eclipse Paho Go MQTT                          |
+| **Kafka Client** | Confluent Kafka Go (`confluent kafka go`)     |
 | **Speicher**     | SQLite (festplattenbasierte Pufferung)        |
 | **Konfiguration**| YAML + Viper                                  |
 | **Logging**      | Zap (strukturiertes, levelbasiertes Logging)  |
-| **Build-Tool**   | Makefile + Go-Module                          |
-| **Deployment**   | systemd-Dienst (empfohlen) oder `nohup`      |
+| **Build Tool**   | Makefile + Go Module                          |
+| **Deployment**   | systemd Dienst (empfohlen) oder `nohup`      |
 
 ![Go](https://img.shields.io/badge/Go-1.21+-00ADD8?style=for-the-badge&logo=go)  
 ![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-A22846?style=for-the-badge&logo=raspberrypi)  
