@@ -3,9 +3,6 @@
 > **A robust edge computing gateway built on Raspberry Pi using Go**  
 > This project implements intelligent, resilient data preprocessing at the network edge, reducing bandwidth, improving data quality, and enabling reliable telemetry flow from IoT sensors to cloud analytics via Kafka.
 
-![Edge Gateway Architecture](https://via.placeholder.com/900x400?text=IoT+Edge+Gateway+Architecture+%7C+MQTT+%E2%86%92+Edge+Processing+%E2%86%92+Kafka)  
-*Architecture Overview (Replace with actual diagram in repo)*
-
 ---
 
 ## 🔍 Project Overview
