@@ -1,0 +1,27 @@
+mqtt:
+  broker: "tcp://localhost:1883"
+  client_id: "edge-gateway-01"
+  topic: "sensors/#"
+  qos: 1
+
+kafka:
+  brokers:
+    - "localhost:9092"
+  topic: "iot-sensor-data"
+  client_id: "edge-producer"
+
+buffer:
+  path: "./data/buffer.db"
+  max_size_mb: 100
+  flush_interval_seconds: 30
+
+processing:
+  aggregation_window_seconds: 60
+
+logging:
+  level: "info"
+  output: "stdout"
+  file: "./logs/gateway.log"
+
+server:
+  metrics_addr: "0.0.0.0:9000"

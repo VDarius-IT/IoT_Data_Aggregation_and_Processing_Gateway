@@ -1,0 +1,46 @@
+{
+  "annotations": {
+    "list": []
+  },
+  "panels": [
+    {
+      "type": "graph",
+      "title": "Enqueued Messages",
+      "targets": [
+        {
+          "expr": "iot_enqueue_total",
+          "legendFormat": "enqueued"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "type": "graph",
+      "title": "Forwarded vs Failed",
+      "targets": [
+        {
+          "expr": "iot_forwarded_total",
+          "legendFormat": "forwarded"
+        },
+        {
+          "expr": "iot_forward_failed_total",
+          "legendFormat": "failed"
+        }
+      ],
+      "id": 2
+    },
+    {
+      "type": "gauge",
+      "title": "Buffer Pending",
+      "targets": [
+        {
+          "expr": "iot_buffer_pending",
+          "legendFormat": "pending"
+        }
+      ],
+      "id": 3
+    }
+  ],
+  "title": "IoT Edge Gateway Overview",
+  "schemaVersion": 27
+}

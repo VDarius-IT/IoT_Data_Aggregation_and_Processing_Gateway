@@ -1,0 +1,12 @@
+[Unit]
+Description=IoT Edge Gateway
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/edge-gateway --config /etc/edge-gateway/config.yaml
+Restart=on-failure
+User=root
+
+[Install]
+WantedBy=multi-user.target
